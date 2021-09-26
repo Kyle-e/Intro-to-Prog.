@@ -1,6 +1,8 @@
 # Intro-to-Prog.
 Program Exercises
 
+//Write a program that works out of a number is even or odd.
+
 #include <iostream>
 using namespace std;
  
@@ -17,3 +19,60 @@ using namespace std;
   
   return 0;
   }
+
+ 
+//Write a program to check whether a number is positive, negative, or 0.
+ 
+#include <iostream>
+using namespace std;
+ 
+ int main()
+ {
+ double num;
+ 
+ cout << "Input a number: ";
+ cin >> num;
+ 
+ if (num > 0)
+ cout << num << " is a positive number." endl;
+ else if (num < 0)
+ cout << num << " is a negative number." endl;
+ else if (num == 0)
+ cout << num << " is zero." endl;
+ 
+ return 0;
+ }
+                    
+                    
+//Write a program to calculate profit or loss.
+                    
+#include <iostream>
+using namespace std;
+ 
+ int main()
+{
+float price, sales, amount;
+ 
+ cout << "Input the cost of the product/s: ";
+ cin >> price;
+ 
+ cout << "Input the selling price: ";
+ cin >> sales;
+ 
+ if (sales > price)
+ {
+  amount = sales - price;
+  cout << "Total profit earned: " << amount;
+ }
+ else if (price > sales)
+ amount = price - sales
+ cout << "Total loss: " << amount;
+ }
+ else
+ cout << "No profit or loss.";
+ 
+ return 0;
+ }
+ 
+ 
+ //
