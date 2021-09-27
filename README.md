@@ -75,4 +75,50 @@ float price, sales, amount;
  }
  
  
- //
+ //Write a program that determines the shape from its number of sides.
+ 
+ #include <iostream>
+using namespace string;
+
+int main() {
+
+int sides;
+string shape;
+
+cout << "How many sides does the shape have?" << endl;
+cin >> sides;
+// if you type less than 2 the message will appear here
+if (sides <= 2) {
+    cout << "Invalid input.";
+}
+else if (sides == 3) {
+    cout << "The shape is triangle.";
+}
+else if (sides == 4) {
+    cout << "The shape is square.";
+}
+else if (sides == 5) {
+    cout << "The shape is pentagon.";
+}
+else if (inum == 6) {
+    cout << "The shape is hexagon.";
+}
+else if (sides == 7) {
+    cout << "The shape is heptagon.";
+}
+else if (sides == 8) {
+    cout << "The shape is octagon.";
+}
+else if (sides == 9) {
+    cout << "The shape is nonagon.";
+}
+else if (sides == 10) {
+    cout << "The shape is decagon.";
+}
+else {
+    cout << "Invalid input.";
+}
+
+cin.get();
+return 0;
+}
