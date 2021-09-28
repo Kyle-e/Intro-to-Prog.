@@ -87,7 +87,7 @@ string shape;
 
 cout << "How many sides does the shape have?" << endl;
 cin >> sides;
-// if you type less than 2 the message will appear here
+
 if (sides <= 2) {
     cout << "Invalid input.";
 }
