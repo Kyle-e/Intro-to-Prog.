@@ -1,0 +1,129 @@
+# Intro-to-Prog.
+Program Exercises
+
+//16 - Write a program to help keep track of grade boundaries.
+
+#include <iostream>
+using namespace std;
+  int main()
+  {
+  
+  int score;
+  
+  cout << "Input score: " endl;
+  cin >> score;
+  
+  if (score > 100) {
+  cout << "Invalid input. Maximum possible score is 100." << endl;
+  }
+  else if (score >= 70) {
+  cout << score << " is an A." << endl;
+  }
+  else if (score >= 60) {
+  cout << score << " is a B." << endl;
+  }
+  else if (score >= 50) {
+  cout << score << " is a C." << endl;
+  }
+  else if (score >= 40) {
+  cout << score << " is a D." << endl;
+  }
+  else if (score < 40) {
+  cout << score << " is an F." << endl;
+  }
+  
+  return 0;
+  }
+  
+  //17-18 - Write a program that checks if you can start a band!
+  
+  #include <iostream> <string>
+  using namespace std;
+ 
+  int main()
+  {
+  bool musicalFriend = true;
+  string friendPlays = "guitar", "drum";
+  
+  if (musicalFriend == true) {
+     if (friendPlays == 'guitar', 'drum') {
+     cout << "The friend can join the band!" << endl;
+     }
+  }
+  
+  else {
+  cout << "The friend cannot join the band." << endl;
+  }
+  
+  return 0;
+  }
+  
+  //19 - Write a program that follows mentioned rules.
+  
+  #include <iostream> <string>
+  using namespace std;
+  
+  int main()
+  {
+  bool lateFriend = true;
+  int totalMoney;
+  
+  if (lateFriend = true) {
+     if (totalMoney >= 5)
+     cout << "Buy a coffee." endl;
+     } else {
+     cout << "Go for a walk around town." endl;
+     }
+     
+  else if (lateFriend = False) {
+     cout << "Sit in the food zone and wait," endl;
+  }
+  
+  return 0;
+  }
+  
+  //20 - Write a program that reads magnitude from user and displays appropriate descriptor.
+  
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+  float magnitude;
+  
+  cout << "What is the magnitude of the earthquake? " endl;
+  cin >> magnitude;
+  
+  if (magnitude < 2) {
+  cout << "It is a micro earthquake." endl;
+  }
+  else if (magnitude >= 2) {
+  cout << "It is a very minor earthquake." endl;
+  }
+  else if (magnitude >= 3) {
+  cout << "It is a minor earthquake." endl;
+  }
+  else if (magnitude >= 4) {
+  cout << "It is a light earthquake." endl;
+  }
+  else if (magnitude >= 5) {
+  cout << "It is a moderate earthquake." endl;
+  }
+  else if (magnitude >= 6) {
+  cout << "It is a strong earthquake." endl;
+  }
+  else if (magnitude >= 7) {
+  cout << "It is a major earthquake." endl;
+  }
+  else if (magnitude >= 8) {
+  cout << "It is a great earthquake." endl;
+  }
+  else if (magnitude > 10) {
+  cout << "IT IS A METEORIC EARTHQUAKE." endl;
+  }
+  
+  cin.get();
+  return 0;
+  }
+  
+     
+  
