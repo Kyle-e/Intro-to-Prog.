@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Enter your first name\n";
+    string userName1;
+    cin >> userName1;
+
+    cout << "Enter your last name\n";
+    string userName2;
+    cin >> userName2;
+
+    cout << "Name: " << userName1 << " " << userName2 << "\nEnter your age\n";
+    int userAge;
+    cin >> userAge;
+
+    cout << "Age: " << userAge << "\nEnter two prices between 0 and 100\n";
+    int price1, price2;
+    cin >> price1 >> price2;
+
+    if (price1 >= 0 && price1 <= 100 || price2 >= 0 && price2 <= 100);
+    double avg = (price1 + price2) / 2; {
+        if (avg >= 70 && avg <= 100) {
+            cout << "The average of " << price1 << " and " << price2 << " is " << avg << ".\n";
+            cout << "You're spending quite a lot without saving anything.";
+        }
+        else if (avg >= 50 && avg <= 69) {
+            cout << "The average of " << price1 << " and " << price2 << " is " << avg << ".\n";
+            cout << "Medium spending and saving, well done.";
+        }
+        else if (avg >= 10 && avg <= 49) {
+            cout << "The average of " << price1 << " and " << price2 << " is " << avg << ".\n";
+            cout << "It seems like you didn't spend much.";
+        }
+        else if (avg >= 0 && avg <= 10) {
+            cout << "The average of " << price1 << " and " << price2 << " is " << avg << ".\n";
+            cout << "You practically didn't buy anything at all.";
+        }
+        else {
+            cout << "Invalid input - prices must be between 0 and 100.";
+        }
+    }
+    cin.get();
+    return 0;
+}
