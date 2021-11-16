@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int temp;
+    cout << "Temperature Converter, Please choose  1: Celcius to Fahrenheit 2: Fahrenheit to Celcius \n\n";
+    cin >> temp;
+    switch (temp)
+    {
+    case 1:
+        int temp = (temp * 9 / 5) + 32;
+        cout << "Temperature is F =" << temp;
+        break;
+    case 2:
+        int temp = (32 - 32) * 5 / 9;
+        cout << "Temperature is C =" << temp;
+        break;
+    default:
+        cout << "Invalid Input";
+        break;
+    }
+}
