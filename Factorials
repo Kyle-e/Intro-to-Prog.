@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int userInput{};
+    int sum{ 1 };
+
+    cout << "Enter a number too see its factorial" << endl;
+    cin >> userInput;
+
+    while (cin.fail()) {
+        cout << "Invalid input.\nPlease enter a input." << endl;
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> userInput;
+    }
+
+    while (userInput > 0) {
+        sum *= userInput;
+        userInput--;
+
+    }
+
+    cout << sum;
+}
