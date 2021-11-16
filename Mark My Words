@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int score;
+
+	cout << "Input score:\n";
+	cin >> score;
+
+	if (score > 100) {
+		cout << "Invalid input. Maximum possible score is 100." << endl;
+	}
+	else if (score >= 70) {
+		cout << score << " is an A." << endl;
+	}
+	else if (score >= 60) {
+		cout << score << " is a B." << endl;
+	}
+	else if (score >= 50) {
+		cout << score << " is a C." << endl;
+	}
+	else if (score >= 40) {
+		cout << score << " is a D." << endl;
+	}
+	else if (score < 40) {
+		cout << score << " is an F." << endl;
+	}
+
+	return 0;
+}
