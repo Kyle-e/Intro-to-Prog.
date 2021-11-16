@@ -1,0 +1,21 @@
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main()
+{
+    bool lateFriend = true;
+    int m;
+
+    if (lateFriend = true) {
+        if (m > 5)
+            cout << "Buy a coffee." << endl;
+    }
+    else {
+        cout << "Go for a walk around town." << endl;
+    }
+
+  if (lateFriend = false) {
+      cout << "Sit in the food zone and wait." << endl;
+  }
+}
