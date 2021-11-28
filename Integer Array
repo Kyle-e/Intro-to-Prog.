@@ -1,0 +1,34 @@
+//Integer array of 1000 random numbers, Count how many times 6 appears
+int randomArray[1000];
+    int j = 0;
+    srand(time(0));
+    for (int x = 0; x < 1000; x++) {
+        randomArray[x] = rand() % 100;
+        if (randomArray[x] == 6) {
+            cout << randomArray[x] << endl;
+            j++;
+        }
+        else {
+            continue;
+        }
+    }
+    cout << "Amount of 6's: " << j;
+    
+    
+    //Integer array of 10 numbers - User Input
+array<int, 10> input = {};
+
+    for (int i{ 0 }; i < 10; i++) {
+        cout << "Enter the number " << (i + 1) << ": ";
+        cin >> input[i];
+        while (cin.fail()) {
+            cout << "Invalid input.\n";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> input[i];
+        }
+    }
+
+    sort(input.begin(), input.end());
+    reverse(input.begin(), input.end());
+    cout << input.at(0);
