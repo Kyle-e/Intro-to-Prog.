@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <array>
+using namespace std;
+
+int main()
+{
+    cout << "What is your first name?\n";
+    string userName1;
+    cin >> userName1;
+
+    cout << "What is your last name?\n";
+    string userName2;
+    cin >> userName2;
+
+    cout << "Hello, " << userName1 << " " << userName2 << ".\nEnter a number:\n";
+    int number;
+    cin >> number;
+
+    //Factorial 
+    long double factorial = 1.0;
+    for (int i = 1; i <= number; i++) {
+        factorial = factorial * i;
+    }
+        cout << "The factorial of " << number << " is " << factorial << endl;
+
+    //Table from 50-40
+        for (int i = 40; i <= 50; i++) {
+            cout << number << " times " << i << " = " << number * i << endl;
+    }
+
+
+    //Exponent Power of 5-0
+    cout << number << " to the power of 5 = " << pow(number, 5) << endl;
+    cout << number << " to the power of 4 = " << pow(number, 4) << endl;
+    cout << number << " cubed = " << pow(number, 3) << endl;
+    cout << number << " squared = " << pow(number, 2) << endl;
+    cout << number << " to the power of 1 = " << pow(number, 1) << endl;
+    cout << number << " to the power of 0 = " << pow(number, 0) << endl;
+}
