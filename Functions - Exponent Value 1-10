@@ -1,0 +1,45 @@
+//Functions - Exponent Value 1-10
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <cmath>
+using namespace std;
+
+string message(double num)
+{
+
+	cout << "Calculating the value of " << num << " to the power of 1-10..." << endl;
+	double y = 1;
+	do
+	{
+		cout << y << " exponent value for " << num << " is ";
+		
+		cout << pow(num, y) << endl;
+		y++;
+	} while (y != 11);
+
+	return "**********END OF THE CODE**********";
+}
+
+int main()
+{
+
+	int num, fact = 1;
+
+	cout << "Input a number to get its exponent value from 1-10" << endl;
+	cin >> num;
+
+	while (cin.fail())
+	{
+		cout << "Invalid input." << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> num;
+	}
+
+
+	cout << message(num) << endl;
+
+	return 0;
+
+}
