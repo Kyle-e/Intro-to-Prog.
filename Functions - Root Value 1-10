@@ -1,0 +1,46 @@
+//Functions - Root Value 1-10
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <cmath>
+using namespace std;
+
+string message(double num)
+{
+
+	cout << "The root of " << num << " from 1-10 is" << endl;
+	double y = 1;
+	do
+	{
+		cout << y << " root value for " << num << " is ";
+		double x = 1 / y;
+		double r = pow(num, x);
+		cout << r << endl;
+		y++;
+	} while (y != 11);
+
+	return "***********END OF CODE**********";
+}
+
+int main()
+{
+
+	int num, fact = 1;
+	
+	cout << "Enter a number to find its 1-10th root value:" << endl;
+	cin >> num;
+
+	while (cin.fail())
+	{
+		cout << "Invalid input." << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> num;
+	}
+
+
+	cout << message(num) << endl;
+
+	return 0;
+
+}
