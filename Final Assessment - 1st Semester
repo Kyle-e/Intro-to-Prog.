@@ -1,0 +1,167 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string menu[4][4] = {
+        { "Coffee", "Price (AED)", "Tea", "Price (AED)" },
+        { "Ice Coffee", "3", "Ice Tea", "3" },
+        { "Milk Coffee", "2", "Milk Tea", "2" },
+        { "Black Coffee", "1", "Black Tea", "1" },
+    };
+
+    for (char i = 0; i < 4; i++) {
+        for (char j = 0; j < 4; j++) {
+            cout << menu[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nChoose your order:\n1: Coffee\n2: Tea" << endl;
+    int order;
+    cin >> order;
+    if (order == 1) {
+        int coftype;
+        cout << "Choose your type of coffee:\n1: Ice\n2: Milk\n3: Black" << endl;
+        cin >> coftype;
+        switch (coftype) {
+
+        case 1:
+            int icesugar;
+
+            cout << "Ice coffee chosen. Would you like to add sugar?" << endl;
+            cin >> icesugar;
+
+            if (icesugar == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int icepayyes;
+                cin >> icepayyes;
+                cout << "You have received your change of " << (icepayyes - 3) << ". Have a nice day!" << endl;
+            }
+            else if (icesugar == 'n') {
+                cout << "Please input payment:" << endl;
+                int icepayno;
+                cin >> icepayno;
+                cout << "You have received your change of " << (icepayno - 3) << ". Have a nice day!" << endl;
+            }
+            break;
+
+        case 2:
+            int milksugar;
+
+            cout << "Milk coffee chosen. Would you like to add sugar?" << endl;
+            cin >> milksugar;
+
+            if (milksugar == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int milkpayyes;
+                cin >> milkpayyes;
+                cout << "You have received your change of " << (milkpayyes - 2) << ". Have a nice day!" << endl;
+            }
+            else if (milksugar == 'n') {
+                cout << "Please input payment:" << endl;
+                int milkpayno;
+                cin >> milkpayno;
+                cout << "You have received your change of " << (milkpayno - 2) << ". Have a nice day!" << endl;
+            }
+            break;
+
+        case 3:
+            int blacksugar;
+
+            cout << "Black coffee chosen. Would you like to add sugar?" << endl;
+            cin >> blacksugar;
+
+            if (blacksugar == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int blackpayyes;
+                cin >> blackpayyes;
+                cout << "You have received your change of " << (blackpayyes - 1) << ". Have a nice day!" << endl;
+            }
+            else if (blacksugar == 'n') {
+                cout << "Please input payment:" << endl;
+                int blackpayno;
+                cin >> blackpayno;
+                cout << "You have received your change of " << (blackpayno - 1) << ". Have a nice day!" << endl;
+            }
+            break;
+        }
+    }
+
+
+    else if (order == 2) {
+        int teatype;
+        //Coffee Type 
+        cout << "Choose your type of tea:\n1: Ice\n2: Milk\n3: Black" << endl;
+        cin >> teatype;
+        switch (teatype) {
+
+        case 1:
+            int icesugar2;
+
+            cout << "Ice coffee chosen. Would you like to add sugar?" << endl;
+            cin >> icesugar2;
+
+            if (icesugar2 == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int icepayyes2;
+                cin >> icepayyes2;
+                cout << "You have received your change of " << (icepayyes2 - 3) << ". Have a nice day!" << endl;
+            }
+            else if (icesugar2 == 'n') {
+                cout << "Please input payment:" << endl;
+                int icepayno2;
+                cin >> icepayno2;
+                cout << "You have received your change of " << (icepayno2 - 3) << ". Have a nice day!" << endl;
+            }
+            break;
+
+        case 2:
+            int milksugar2;
+
+            cout << "Milk coffee chosen. Would you like to add sugar?" << endl;
+            cin >> milksugar2;
+
+            if (milksugar2 == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int milkpayyes2;
+                cin >> milkpayyes2;
+                cout << "You have received your change of " << (milkpayyes2 - 2) << ". Have a nice day!" << endl;
+            }
+            else if (milksugar2 == 'n') {
+                cout << "Please input payment:" << endl;
+                int milkpayno2;
+                cin >> milkpayno2;
+                cout << "You have received your change of " << (milkpayno2 - 2) << ". Have a nice day!" << endl;
+            }
+            break;
+
+        case 3:
+            int blacksugar2;
+
+            cout << "Black coffee chosen. Would you like to add sugar?" << endl;
+            cin >> blacksugar2;
+
+            if (blacksugar2 == 'y') {
+                cout << "Sugar added to your ice coffee. Please input payment:" << endl;
+                int blackpayyes2;
+                cin >> blackpayyes2;
+                cout << "You have received your change of " << (blackpayyes2 - 1) << ". Have a nice day!" << endl;
+            }
+            else if (blacksugar2 == 'n') {
+                cout << "Please input payment:" << endl;
+                int blackpayno2;
+                cin >> blackpayno2;
+                cout << "You have received your change of " << (blackpayno2 - 1) << ". Have a nice day!" << endl;
+            }
+            break;
+        }
+    }
+
+    while (order > 2 || order < 1) {
+        cout << "Invalid input.\nPlease enter a input." << endl;
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> order;
+    }
+}
